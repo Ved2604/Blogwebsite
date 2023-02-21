@@ -50,7 +50,7 @@ app.get("/posts/:postname",function(req,res){
 
 
 
-const port= 443;
+const port=process.env.PORT || 3000;
 
 app.listen(port, function() {
   console.log("Server started on port "+port);
